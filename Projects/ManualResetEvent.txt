@@ -1,0 +1,5 @@
+ManualResetEvent
+
+Multiple threads can enter into a waiting/blocking state by calling the WaitOne method on ManualResetEvent object. When controlling thread calls the Set method all the waiting threads are unblocked and free to proceed.
+
+ManualResetEvent maintains a boolean variable in memory. When the boolean variable is false then it blocks all threads and when the boolean variable is true it unblocks all threads.
